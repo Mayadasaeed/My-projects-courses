@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+ body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}    
+.img{
+    width: 35%;
+    height: 100%;
+}
+.spider{
+    margin-top: 150px;
+    margin-left: 400px;
+    color: crimson;
+    font-family: "Dancing Script", cursive}
+.h1{
+        margin-left: 370px;
+        font-weight:600;
+        color: white;   
+        font-family: "Open Sans", sans-serif;
+    }
+.p{
+    color: white;
+    word-spacing: normal;
+    margin-left: 90px;  
+    font-family: "Open Sans", sans-serif;
+
+}
+.button {
+    margin-left :370px ;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #a81a1a;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #af2c2c;
+  }
+  
+  button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #a71818;
+    box-shadow: 4px 5px 17px -4px #9c1313;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #870d0d;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  button:hover::before {
+    width: 250%;
+  }
